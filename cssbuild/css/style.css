@@ -1,22 +1,195 @@
+/* * {
+  margin: 0;
+  padding: 0;
+} */
+
 body {
   background: black;
-  color: wheat;
+  color: white;
 
   font: normal 16px Arial, Helvetica, sans-serif;
   line-height: 1.6em;
   margin: 0%;
 }
 .container {
-    width: 90%;
-    margin: auto;
+  width: 90%;
+  margin: auto;
 }
-  
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: red;
+}
+a:active {
+  color: green;
+}
+a:visited {
+  /* color: black; */
+}
+
+.button {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 15px;
+}
+
+.clr {
+  clear: both;
+}
+
 .box-1 {
-  background-color: azure;
+  background-color: white;
   color: black;
 
-  border: 5px red solid;
-  border-width: 3px ;
+  border-width: 3px;
   border-bottom-width: 10px;
   border-top-style: dotted;
+
+  border: 5px solid #ccc;
+
+  /* padding-top: 16px; */
+  padding: 16px;
+  margin-top: 16px;
 }
+
+.box-1 h1 {
+  font-family: Tahoma;
+  font-weight: 700;
+  font-style: italic;
+  /* text-decoration: underline; */
+  /* text-transform: uppercase;
+  letter-spacing: 0.1em;
+  /* word-spacing: 1em; */
+}
+
+.box-2 h1 {
+  font-family: Tahoma;
+  font-weight: 700;
+  font-style: italic;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  word-spacing: 1em;
+}
+
+.box-2 {
+  border: 3px dotted #ccc;
+  padding: 20px;
+  margin-top: 20px 0;
+}
+
+.categories {
+  border: 1px #ccc solid;
+  background-color: white;
+
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.categories h2 {
+  text-align: center;
+  color: #000;
+}
+
+.categories ul {
+  padding: 0;
+  color: #000;
+
+  padding-left: 20px;
+
+  list-style: square;
+  list-style: none;
+}
+.categories li {
+  color: #000;
+
+  padding-bottom: 10px;
+  border-bottom: dotted 1px black;
+  list-style-image: url(../images/mark-symball-icon-3-product.png);
+}
+
+.my-form {
+  padding: 20px;
+}
+.my-form .form-group {
+  padding-bottom: 15px;
+}
+.my-form label {
+  display: block;
+}
+
+.my-form input[type="text"],
+.my-form textarea {
+  padding: 8px;
+  width: 100%;
+}
+
+.block {
+  float: left;
+  width: 33.3%;
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+#main-block {
+  float: left;
+  width: 70%;
+}
+#sidebar {
+  float: right;
+  width: 30%;
+  background-color: #ccc;
+  color: #000;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.p-box {
+  width: 800px;
+  height: 500px;
+  border: 1px solid white;
+  /* color: #fff; 
+    padding: 15px; */
+  margin: top 30px;
+  position: relative;
+  background-repeat: no-repeat;
+  background-image: url(../images/backround.jpg);
+  background-position: 100px 100px;
+  background-position: center center;
+}
+.p-box h1 {
+  position: absolute;
+  color: white;
+  top: 100px;
+  left: 200px;
+}
+
+.p-box h2 {
+  position: absolute;
+  color: white;
+  bottom: 40px;
+  right: 100px;
+}
+
+.fix-me {
+  position: fixed;
+  top: 400px;
+}
+
+.my-list li:first-child {
+  background: blue;
+}
+.my-list li:last-child {
+  background: green;
+}
+.my-list li:nth-child(even) {
+  background: olive;
+}
+.my-list li:nth-child(5) {
+  background: blueviolet;
+}
+
